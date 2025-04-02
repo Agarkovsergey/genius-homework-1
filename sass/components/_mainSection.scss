@@ -1,3 +1,69 @@
 main {
   border: 2px solid aqua;
+  .hero {
+    border: 1px solid black;
+    .hero__text {
+      font-size: 12px;
+      line-height: 1.5;
+      color: $dark-grey-color;
+    }
+  }
+  .features {
+    .features-text {
+      font-size: 22px;
+      line-height: 1.7;
+      padding-bottom: 40px;
+      span {
+        text-transform: capitalize;
+        font-weight: 600;
+      }
+    }
+  }
+  .our-jobs {
+  }
+  .our-procedures {
+    .slider-content-text {
+      font-size: 22px;
+      line-height: 1.18;
+    }
+  }
+  .find-us {
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .map-container {
+        margin-right: 30px;
+        width: 50%;
+      }
+      .form-container {
+        width: 50%;
+      }
+    }
+    .form-container {
+      background: url(../../images/form_bg.png);
+      background-repeat: no-repeat;
+      padding: 48px 56px;
+      h3 {
+        font-size: 22px;
+        font-weight: 600;
+        color: $white-color;
+        span {
+          color: $accent-color;
+        }
+      }
+      input {
+        width: 310px;
+        height: 52px;
+      }
+      label {
+        display: none;
+      }
+    }
+    .copyrights {
+      color: $grey-color;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+  }
 }

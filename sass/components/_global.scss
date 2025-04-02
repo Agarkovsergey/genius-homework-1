@@ -12,9 +12,9 @@ html {
 body {
   background-color: $primary-background-color;
   color: $primary-text-color;
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 0.03em;
-  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0;
+  font-size: 18px;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -40,8 +40,25 @@ footer {
   flex-basis: auto;
 }
 /* конец блока прижимает футер к низу страници на случай если у нас будет мало контента, и мы не хотим видеть ниже футера пустоту */
+h1 {
+  font-size: 140px;
+  line-height: 1.22;
+  text-transform: capitalize;
+  color: $accent-color;
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
 a {
   text-decoration: none;
+  color: $primary-text-color;
+  &:hover {
+    color: $secondary-text-color;
+  }
+  &.primary {
+    color: $accent-color;
+    font-weight: 700;
+  }
 }
 img {
   display: block;
@@ -65,8 +82,8 @@ address {
   overflow: hidden;
 }
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 100px;
+  padding-right: 100px;
   margin: 0 auto;
   @media screen and (min-width: 480px) {
     width: 480px;
@@ -79,27 +96,23 @@ address {
   }
 }
 .section-title {
+  width: 100%;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 64px;
+  line-height: 1;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 48px;
   &::first-letter {
     text-transform: uppercase;
+  }
+  span {
+    color: $secondary-text-color;
   }
 }
 .button {
   &:hover,
-  &:focus,
-  &--primary {
+  &:focus {
     background-color: $accent-color;
     color: $white-color;
-  }
-  &--primary {
-    &:hover,
-    &:focus {
-      background-color: $secondary-background-color;
-      color: $accent-color;
-    }
   }
 }

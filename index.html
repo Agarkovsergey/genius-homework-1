@@ -8,6 +8,9 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -26,10 +29,10 @@
           <div class="nav-container">
             <nav class="site-nav">
               <ul>
-                <li>Про нас</li>
-                <li>Чому ми</li>
-                <li>Наші процедури</li>
-                <li>Контакти</li>
+                <li><a href="#" class="primary">Про нас</a></li>
+                <li><a href="#">Чому ми</a></li>
+                <li><a href="#">Наші процедури</a></li>
+                <li><a href="#">Контакти</a></li>
               </ul>
             </nav>
           </div>
@@ -51,27 +54,34 @@
       <section class="hero">
         <div class="container">
           <p class="hero__sub-title">Косметологічна клініка</p>
-          <h1 class="hero__title">Beauty Zone</h1>
+          <h1 class="hero__title">Beauty<br />Zone</h1>
           <div class="hero__btn-block">
-            <button type="button" class="hero__button">Замовити дзвінок</button>
+            <button type="button" class="hero__button button">Замовити дзвінок</button>
           </div>
-          <p class="hero__text">Косметологічна клініка</p>
+          <p class="hero__text">
+            Запишись та отримай безкоштовну<br />
+            консультацію нашого косметолога
+          </p>
         </div>
       </section>
       <section class="features">
         <div class="container">
-          <h2 class="section-title">
-            Перевтілюйтесь в
-            <span class="accent">beauty zone!</span>
-          </h2>
-          <p class="features-text">
-            Наша косметологічна клініка пропонує вам професійні послуги з догляду за шкірою обличчя та тіла.
-          </p>
-          <p class="features-text">
-            B
-            <strong>beauty zone</strong> ми гарантуємо найвищі стандарти якості та приємний сервіс. Наші косметологічні
-            процедури та препарати допоможуть вам підтримувати свою красу та молодість. З нами краса назавжди!
-          </p>
+          <div class="features-info">
+            <h2 class="section-title">
+              Перевтілюйтесь в
+              <span class="accent">beauty zone!</span>
+            </h2>
+            <p class="features-text">
+              Наша косметологічна клініка пропонує вам професійні послуги з догляду за шкірою обличчя та тіла.
+            </p>
+            <p class="features-text">
+              B <span>beauty zone</span> ми гарантуємо найвищі стандарти якості та приємний сервіс. Наші косметологічні
+              процедури та препарати допоможуть вам підтримувати свою красу та молодість. З нами краса назавжди!
+            </p>
+          </div>
+          <div class="features_image">
+            <img src="./images/features.png" alt="some txt" />
+          </div>
         </div>
       </section>
       <section class="our-jobs">
@@ -101,12 +111,15 @@
             <span class="accent">процедури</span>
           </h2>
           <div class="slider-container">
+            <div class="slider-container__arrow">
+              <img src="./images/Arrow_back.png" alt="Arrow_back" class="arrow-back" />
+            </div>
             <div class="slider-content">
               <div class="slider-img-block">
                 <img src="./images/procedures1.png" alt="" />
               </div>
               <div class="slider-text-wrapper">
-                <p class="slider-text">Маски для обличчя</p>
+                <p class="slider-content-text">Маски для обличчя</p>
               </div>
             </div>
             <div class="slider-content">
@@ -114,7 +127,7 @@
                 <img src="./images/procedures2.png" alt="" />
               </div>
               <div class="slider-text-wrapper">
-                <p class="slider-text">Маски для обличчя</p>
+                <p class="slider-content-text">Маски для обличчя</p>
               </div>
             </div>
             <div class="slider-content">
@@ -122,9 +135,23 @@
                 <img src="./images/procedures3.png" alt="" />
               </div>
               <div class="slider-text-wrapper">
-                <p class="slider-text">Маски для обличчя</p>
+                <p class="slider-content-text">Маски для обличчя</p>
               </div>
             </div>
+            <div class="slider-container__arrow">
+              <img src="./images/Arrow_next.png" alt="Arrow_next" class="arrow-next" />
+            </div>
+            <ul class="slider-dots">
+              <li class="slider-dots-item">
+                <img src="./images/Ellipse_default.svg" alt="dot" />
+              </li>
+              <li class="slider-dots-item">
+                <img src="./images/Ellipse_default.svg" alt="dot" />
+              </li>
+              <li class="slider-dots-item">
+                <img src="./images/Ellipse_default.svg" alt="dot" />
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -138,12 +165,37 @@
             <img src="./images/map.png" alt="map" />
           </div>
           <div class="form-container">
-            <h3>
-              Запишіться
-              <span class="accent">безкоштовно </span>та отримайте подарунок
-            </h3>
-            <button type="button" class="hero__button">Записатись безкоштовно</button>
-            <p>Натискаючи на кнопку я погоджуюсь з політикою конфіденційності</p>
+            <form action="" class="form">
+              <h3>Запишіться <span class="accent">безкоштовно </span>та отримайте подарунок</h3>
+              <div class="find-us__form-wraper">
+                <label class="find-us__join" for="firstName">Ваше ім'я та прізвище</label>
+                <input
+                  type="text"
+                  name="firstName"
+                  id="firstName"
+                  placeholder="Ваше ім'я та прізвище"
+                  class="find-us__input"
+                />
+                <label class="find-us__join" for="phoneNumber">Ваш номер телефону</label>
+                <input
+                  type="tel"
+                  name="phoneNumber"
+                  id="phoneNumber"
+                  placeholder="Ваш номер телефону"
+                  class="find-us__input"
+                />
+                <label class="find-us__join" for="yourEmail">Ваша електронна пошта</label>
+                <input
+                  type="email"
+                  name="yourEmail"
+                  id="yourEmail"
+                  placeholder="Ваша електронна пошта"
+                  class="find-us__input"
+                />
+              </div>
+              <button type="submit" class="form__btn-submit">Записатись безкоштовно</button>
+            </form>
+            <p class="copyrights">Натискаючи на кнопку я погоджуюсь з політикою конфіденційності</p>
           </div>
         </div>
       </section>
@@ -157,10 +209,10 @@
         </div>
         <div class="fotter-nav">
           <ul>
-            <li>Про нас</li>
-            <li>Чому ми</li>
-            <li>Наші процедури</li>
-            <li>Контакти</li>
+            <li><a href="#">Про нас</a></li>
+            <li><a href="#">Чому ми</a></li>
+            <li><a href="#">Наші процедури</a></li>
+            <li><a href="#">Контакти</a></li>
           </ul>
         </div>
         <div class="contacts">
