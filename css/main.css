@@ -190,7 +190,7 @@ main .find-us .container .form-container {
   width: 50%;
 }
 main .find-us .form-container {
-  background: url(../../images/form_bg.png);
+  background: url(./../images/form_bg.png);
   background-repeat: no-repeat;
   padding: 48px 56px;
 }
