@@ -154,13 +154,6 @@ address {
   color: #ffffff;
 }
 
-header {
-  border: 2px solid tomato;
-}
-
-main {
-  border: 2px solid aqua;
-}
 main .hero {
   border: 1px solid black;
 }
@@ -226,8 +219,7 @@ main .find-us .copyrights {
 }
 
 footer {
-  border: 2px solid #9acd32;
-  background-image: url(../../images/footer.png);
+  background-image: url(./../images/footer.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: bottom;
