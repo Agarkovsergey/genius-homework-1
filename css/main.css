@@ -154,9 +154,6 @@ address {
   color: #ffffff;
 }
 
-main .hero {
-  border: 1px solid black;
-}
 main .hero .hero__text {
   font-size: 12px;
   line-height: 1.5;
