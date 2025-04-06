@@ -1,5 +1,8 @@
 main {
   .hero {
+    background: url(./../images/hero_image.png);
+    background-repeat: no-repeat;
+    background-position: right;
     .hero__text {
       font-size: 12px;
       line-height: 1.5;
@@ -18,6 +21,11 @@ main {
     }
   }
   .our-jobs {
+    background: url(./../images/wave_bg.png);
+    background-position: top;
+    background-size: cover;
+    padding-top: 350px;
+    padding-bottom: 100px;
   }
   .our-procedures {
     .slider-content-text {
