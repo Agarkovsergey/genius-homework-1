@@ -1,8 +1,6 @@
 footer {
-  background-image: url(./../images/footer.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-y: bottom;
+  background: url(./../images/pexels-photo-8101532-PhotoRoom1.png) no-repeat bottom right, url(./../images/footer.png);
+  background-color: #011c44;
   a {
     color: $white-color;
     &:hover {
